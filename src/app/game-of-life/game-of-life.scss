@@ -1,0 +1,25 @@
+button {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #42424249;
+}
+
+.row {
+  display: flex;
+  gap: 0;
+}
+
+.cell {
+  &.alive {
+    background-color: #d96a9e;
+    &:hover {
+      background-color: #c287a2;
+    }
+  }
+  &.dead {
+    background-color: #d9d9d9;
+    &:hover {
+      background-color: #bdbbbb;
+    }
+  }
+}

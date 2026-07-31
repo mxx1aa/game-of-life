@@ -1,0 +1,111 @@
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  background-color: #615c62;
+  height: 100%;
+  width: 400px;
+  align-items: center;
+}
+
+.grid-item {
+  display: flex;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  &:hover {
+    background-color: #a13d6c;
+  }
+  &:disabled {
+    background-color: #4a464b;
+    color: #544f55;
+    cursor: not-allowed;
+  }
+}
+.start {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 3rem;
+  background-color: #d96a9e;
+  border-radius: 20px;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 80px;
+  width: 180px;
+  margin-bottom: 1rem;
+}
+
+.next,
+.clear {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 1.8rem;
+  background-color: #d96a9e;
+  border-radius: 20px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 80px;
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+input[type='range'] {
+  accent-color: #58223b;
+}
+
+.explanation-grid {
+  background-color: #8f8a93;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    background-color: #58223b;
+    padding: 0.5rem;
+  }
+  img {
+    width: 200px;
+    height: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: center;
+    display: flex;
+  }
+  p {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.explanation-grid-item {
+  display: flex;
+  //flex-direction: column;
+  align-items: center;
+}

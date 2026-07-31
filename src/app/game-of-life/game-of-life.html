@@ -1,0 +1,13 @@
+<div class="grid">
+    @for (row of gameService.rows(); track $index; let r = $index) {
+    <div class="row">
+        @for (cell of row; track $index; let c = $index) {
+        <button class="cell" [ngClass]="{ alive: cell, dead: !cell }" (click)="gameService.toggleCell(r, c)">
+
+        </button>
+
+
+        }
+    </div>
+    }
+</div>

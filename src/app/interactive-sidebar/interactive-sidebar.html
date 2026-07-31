@@ -1,0 +1,40 @@
+<div class="sidebar-container">
+    <div class="grid-item">
+        <button class="start" (click)="gameService.toggleGameState()">
+            @if (gameService.isRunning()) {
+            Stop
+            } @else {
+            Start
+            }
+        </button>
+    </div>
+    <div class="grid-item button-row">
+        <button class="next" (click)="gameService.nextGeneration()"
+            [disabled]="!gameService.hasAliveCells()">Next</button>
+        <button class="clear" (click)="gameService.clear()" [disabled]="!gameService.hasAliveCells()">Clear</button>
+    </div>
+    <div class="tick-speed">
+        <input type="range" min="10" max="1000" step="10" />
+    </div>
+
+    <div class="explanation-grid">
+        <h2>Explanation</h2>
+        <div class="explanation-grid-images">
+            <div class="explanation-grid-item">
+                <p>Each cell with one or no neighbors dies, as if by solitude.</p>
+                <img src="/assets/explanations/0-1-example.png">
+            </div>
+            <div class="explanation-grid-item">
+                <p>Each cell with four or more neighbors dies, as if by overpopulation.</p>
+                <img src="/assets/explanations/4-example.png">
+            </div>
+            <div class="explanation-grid-item">
+                <p>Each cell with two or three neighbors survives.</p>
+                <img src="/assets/explanations/2-3-example.png">
+            </div>
+            <div class="explanation-grid-item">
+                <p>Each empty cell with exactly three neighbors becomes populated.</p>
+                <img src="/assets/explanations/0-example.png">
+            </div>
+        </div>
+    </div>
