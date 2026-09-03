@@ -8,3 +8,7 @@ INCLUDE THE FOLLOWING:
 - UX
 - FEATURES
 - GAME CONTROL/INTERACTION
+
+This is an Angular adaptation of John Conway's Game of Life!
+
+I was challenged to create the complex code and rules used in this game.
